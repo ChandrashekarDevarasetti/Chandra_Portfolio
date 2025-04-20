@@ -1609,47 +1609,31 @@ CSS
 
 <!-- Styles -->
 <style>
-/* Email icon - red */
-.contact-block .icon .fa-envelope {
-  color: #e63946 !important;
-}
-
-/* Phone icon - green */
-.contact-block .icon .fa-phone {
-  color: #2a9d8f !important;
-}
-
-/* Location icon - orange */
-.contact-block .icon .fa-map-marker-alt {
-  color: #f4a261 !important;
-}
-
-/* Remove animation for mobile view and normal view */
+/* Add animation for scroll */
 .contact-items {
-  opacity: 1;
-  transform: none; /* No translation */
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s forwards;
 }
 
-/* Ensure mobile-friendly layout */
+/* For mobile view, disable translateY animation */
 @media (max-width: 768px) {
   .contact-items {
-    display: block; /* Stack items vertically */
-    overflow: hidden; /* Prevent automatic scrolling to the contact section */
-  }
-  .contact-block {
-    width: 100%; /* Full-width for mobile */
+    opacity: 1;
+    transform: none; /* No translation on mobile */
+    animation: none; /* Disable animation */
   }
 }
 </style>
 
 <!-- Optional: Add JS for smooth scroll (if required) -->
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    if (window.innerWidth <= 768) {
-      // Ensure the page starts at the top and doesn't scroll to the contact section automatically
-      window.scrollTo(0, 0);
-    }
-  });
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth <= 768) {
+    // Ensure page is at the top and not jumping to any section
+    window.scrollTo(0, 0);
+  }
+});
 </script>
 
 
