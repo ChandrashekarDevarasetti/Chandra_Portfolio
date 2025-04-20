@@ -1565,10 +1565,14 @@ CSS
     flex-shrink: 0;
   }
 </style>
+
 <!-- Contact -->
 <section id="contact" class="py-5 contact">
   <div class="container">
-    <h2 class="section-title text-center mb-5">Contact</h2>
+    <!-- Section Title with Icon -->
+    <h2 class="section-title text-center mb-5">
+      <i class="fas fa-address-book text-primary me-2"></i> Contact
+    </h2>
 
     <!-- Contact Items -->
     <div class="row justify-content-center text-center contact-items d-flex flex-md-row flex-column">
@@ -1629,6 +1633,25 @@ CSS
 /* Location icon - orange */
 .contact-block .icon .fa-map-marker-alt {
   color: #f4a261 !important;
+}
+
+/* Add animation for scroll */
+.contact-items {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s forwards;
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Ensure mobile-friendly layout */
