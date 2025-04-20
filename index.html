@@ -529,21 +529,34 @@
   });
 </script>
 
-<!-- Hero Section with Typing Effect -->
-<section id="Home" class="hero d-flex align-items-center text-white" style="min-height: 60vh; background: linear-gradient(to right, #0f2027, #203a43, #2c5364);">
+
+  <!-- Hero Section with Typing Effect -->
+<section id="Home" class="hero text-white bg-hero pt-5 pb-5">
   <div class="container">
     <div class="row align-items-center text-center text-md-start">
-      <div class="col-md-7">
+
+      <!-- Text Column -->
+      <div class="col-12 col-md-7 mb-4 mb-md-0">
         <h1 class="display-4 fw-bold mb-3">Hello, I'm Chandra Shekar</h1>
         <h4><span id="typed-text"></span></h4>
-        <a href="Chandra_Shekar_D_Data_Scientist.pdf" class="btn btn-outline-light btn-lg mt-4 px-4" target="_blank">Download Resume</a>
+        <a href="Chandra_Shekar_D_Data_Scientist.pdf"
+           class="btn btn-outline-light btn-lg mt-4 px-4"
+           target="_blank">
+          Download Resume
+        </a>
       </div>
-      <div class="col-md-5 text-center mt-4 mt-md-0">
-        <img src="https://raw.githubusercontent.com/ChandrashekarDevarasetti/Chandra_Portfolio/refs/heads/main/Chandra.jpg" class="img-fluid rounded-circle shadow" width="220" alt="Chandra Shekar" />
+
+      <!-- Image Column -->
+      <div class="col-12 col-md-5 text-center">
+        <img src="https://raw.githubusercontent.com/ChandrashekarDevarasetti/Chandra_Portfolio/refs/heads/main/Chandra.jpg"
+             alt="Chandra Shekar"
+             class="img-fluid rounded-circle shadow hero-image" />
       </div>
+
     </div>
   </div>
 </section>
+
 
 <script>
   const texts = ["Data Analyst", "Data Scientist"];
