@@ -434,34 +434,6 @@
     transform: translateY(0);
   }
 
-  /* Mobile Responsive Styling */
-  @media (max-width: 768px) {
-    .edu-item {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .edu-content-left,
-    .edu-content-right {
-      align-items: center;
-      text-align: center;
-    }
-
-    .degree-title {
-      font-size: 1.3rem; /* Adjusted font size for mobile */
-    }
-
-    .edu-details {
-      font-size: 1rem;
-    }
-  }
-
-  /* Disable animation for reduced motion preference */
-  @media (prefers-reduced-motion: reduce) {
-    .edu-item {
-      transition: none;
-    }
-  }
 
 
 
@@ -1595,7 +1567,7 @@ CSS
 </style>
 
 <!-- Contact -->
-<section id="contact" data-aos="fade-up" class="py-5 contact">
+<section id="contact" class="py-5 contact">
   <div class="container">
     <h2 class="section-title text-center mb-5">Contact</h2>
 
@@ -1668,9 +1640,7 @@ CSS
   .contact-block {
     width: 100%; /* Full-width for mobile */
   }
-  html {
-    scroll-behavior: unset; /* Disable smooth scrolling on mobile */
-  }
+
 }
 </style>
 
