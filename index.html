@@ -457,44 +457,33 @@
 </nav>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.querySelectorAll(".nav-link");
-    const navbarCollapse = document.querySelector(".navbar-collapse");
-
-    navLinks.forEach(link => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute("href").substring(1);
-        const targetSection = document.getElementById(targetId);
-
-        if (targetSection) {
-          targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-
-        // Collapse the navbar on mobile after clicking
-        if (navbarCollapse.classList.contains("show")) {
-          new bootstrap.Collapse(navbarCollapse).toggle();
-        }
-
-        // Update active class
-        navLinks.forEach(l => l.classList.remove("active"));
-        this.classList.add("active");
+    document.addEventListener("DOMContentLoaded", function () {
+      const navLinks = document.querySelectorAll(".nav-link");
+      const navbarCollapse = document.querySelector(".navbar-collapse");
+  
+      navLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          const targetSection = document.getElementById(targetId);
+  
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+  
+          // Collapse the navbar on mobile after clicking
+          if (navbarCollapse.classList.contains("show")) {
+            new bootstrap.Collapse(navbarCollapse).toggle();
+          }
+  
+          // Update active class
+          navLinks.forEach(l => l.classList.remove("active"));
+          this.classList.add("active");
+        });
       });
     });
-  });
-</script>
-
-    window.addEventListener("scroll", activateNavLink);
-    activateNavLink();
-
-    navLinks.forEach(link => {
-      link.addEventListener("click", function () {
-        navLinks.forEach(l => l.classList.remove("active"));
-        this.classList.add("active");
-      });
-    });
-  });
-</script>
+  </script>
+  
 
 
   <!-- Hero Section with Typing Effect -->
@@ -1648,10 +1637,3 @@ CSS
   
   </body>
   </html>
-  
-
-      
-    
-    
-  
- 
