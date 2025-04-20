@@ -1554,7 +1554,7 @@ CSS
   }
 </style>
 
-<!-- Contact -->
+<!-- Contact Section -->
 <section id="contact" class="py-5 contact">
   <div class="container">
     <!-- Section Title with Icon -->
@@ -1605,9 +1605,9 @@ CSS
       </a>
     </div>
   </div>
-  
 </section>
 
+<!-- Styles -->
 <style>
 /* Email icon - red */
 .contact-block .icon .fa-envelope {
@@ -1624,14 +1624,11 @@ CSS
   color: #f4a261 !important;
 }
 
-/* Add animation for scroll */
+/* Remove animation for mobile view and normal view */
 .contact-items {
-  opacity: 0;
-  transform: translateY(50px);
-  animation: fadeInUp 1s forwards;
+  opacity: 1;
+  transform: none; /* No translation */
 }
-
-
 
 /* Ensure mobile-friendly layout */
 @media (max-width: 768px) {
@@ -1647,10 +1644,10 @@ CSS
 
 <!-- Optional: Add JS for smooth scroll (if required) -->
 <script>
-  // Disable automatic scroll to contact section on mobile
   document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth <= 768) {
-      window.scrollTo(0, 0); // Ensure it doesn't scroll to the contact section by default
+      // Ensure the page starts at the top and doesn't scroll to the contact section automatically
+      window.scrollTo(0, 0);
     }
   });
 </script>
