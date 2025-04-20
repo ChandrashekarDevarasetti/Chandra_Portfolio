@@ -1565,7 +1565,6 @@ CSS
     flex-shrink: 0;
   }
 </style>
-
 <!-- Contact -->
 <section id="contact" class="py-5 contact">
   <div class="container">
@@ -1636,16 +1635,24 @@ CSS
 @media (max-width: 768px) {
   .contact-items {
     display: block; /* Stack items vertically */
+    overflow: hidden; /* Prevent automatic scrolling to the contact section */
   }
   .contact-block {
     width: 100%; /* Full-width for mobile */
   }
-
 }
 </style>
 
-<!-- Remove AOS temporarily if it’s causing the issue -->
-<!-- <script src="path-to-aos.js"></script> -->
+<!-- Optional: Add JS for smooth scroll (if required) -->
+<script>
+  // Disable automatic scroll to contact section on mobile
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth <= 768) {
+      window.scrollTo(0, 0); // Ensure it doesn't scroll to the contact section by default
+    }
+  });
+</script>
+
 
 
  <!-- Footer -->
