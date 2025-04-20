@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chandra Shekar | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  <!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<!-- AOS CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <!-- AOS CSS for scroll animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Google Fonts (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+  <!-- AOS Animate on Scroll CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', sans-serif; }
+
+    .hero { background: #343a40; color: white; height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+    .about { background: #f8f9fa; }
+    .projects { background: #e3f2fd; }
+    .skills { background: #fff3cd; }
+    .testimonials { background: #e9ecef; }
+    .contact { background: #f1f3f5; }
+
+    h2.section-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .skill-img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .skill-img:hover {
+      transform: scale(1.2);
+    }
+
+    .contact-info i {
+      color: #0d6efd;
+      margin-right: 10px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .icon-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      margin: 0 5px;
+      border-radius: 50%;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      color: #0d6efd;
+      font-size: 1.4rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .icon-btn:hover {
+      background-color: #0d6efd;
+      color: #fff;
+      transform: scale(1.1);
+      box-shadow: 0 6px 16px rgba(13, 110, 253, 0.3);
+    }
+
+    .nav-link.active { color: #0d6efd !important; font-weight: bold; border-bottom: 2px solid #0d6efd; }
+
+    @media (max-width: 768px) {
+      #about .col-md-7 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+    
+  .experience-item {
+    border-left: 4px solid #0d6efd;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .experience-list {
+    padding-left: 1.2rem;
+  }
+
+  .experience-list li {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    color: #343a40;
+  }
+
+  .experience-item h5 {
+    font-size: 1.1rem;
+    color: #0d6efd;
+    margin-bottom: 0.5rem;
+  }
+
+  .experience-item h6 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .experience-item small {
+    font-size: 0.85rem;
+    color: #6c757d;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  @keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #fff; }
+}
+
+#typed-text {
+  animation: blink 1s infinite;
+}
+
+
+  
+
+  @media (max-width: 768px) {
+    .experience-item {
+      border-left: none;
+      border-top: 2px solid #0d6efd;
+      padding-top: 1rem;
+    }
+  }
+
+
+    footer {
+      background: #212529;
+      color: #fff;
+      padding: 15px 0;
+      font-size: 0.9rem;
+
+
+    }
+
+/* Custom CSS for Justified Text with Indentation */
+.about-text {
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 60px; /* Adjust the value for the desired indentation */
+}
+
+
+
+
+/* skill -CSS */
+  .body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .skill-card {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .skill-icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    .section-bg {
+      background: linear-gradient(to bottom right, #f8f9fa, #ffffff);
+    }
+
+    .skill-card p {
+      color: #555;
+    }
+
+
+/*Experience*/
+
+  .experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .experience-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  .experience-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-header {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+  }
+
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.4em 0.7em;
+    border-radius: 12px;
+  }
+
+  .experience-list {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .experience-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+
+  .section-title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+  }
+
+  /* Projects */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+  
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      background-color: #ffffff;
+    }
+  
+    .card:hover {
+      transform: scale(1.02);
+    }
+  
+    .card-body {
+      padding: 1rem;
+    }
+  
+    .highlight {
+      font-weight: bold;
+      color: #1f7a8c;
+    }
+  
+    .badge.bg-teal {
+      background-color: #008080;
+    }
+  
+    .badge.bg-orange {
+      background-color: #ff7f50;
+    }
+  
+    .badge {
+      font-size: 0.8rem;
+      padding: 0.4em 0.75em;
+      border-radius: 20px;
+    }
+  
+    .card-title i {
+      margin-right: 8px;
+    }
+  
+  /* Education */
+  /* General Section Styles */
+  #education {
+    padding: 50px 15px;
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2rem;  /* Smaller font size for title */
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  .section-title i {
+    margin-right: 10px;
+    color: #3498db; /* Blue color for the icon */
+    font-size: 2rem;
+  }
+
+  /* Individual Education Item Styles */
+  .edu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;  /* Reduced padding for smaller cards */
+    margin-bottom: 15px;  /* Reduced margin between items */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(40px); /* Increased starting position */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    height: 120px; /* Reduced card height */
+  }
+
+  .edu-content-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edu-content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .degree-title {
+    font-size: 1.4rem; /* Reduced font size */
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+  }
+
+  .degree-title i {
+    margin-right: 10px;
+    color: #3498db; /* Matching the color of the icon with the header */
+  }
+
+  .institution-name {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 8px;
+  }
+
+  .edu-details {
+    font-size: 1rem;
+    color: #34495e;
+  }
+
+  .date,
+  .cgpa {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  /* Animation for fade-in effect */
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Mobile Responsive Styling */
+  @media (max-width: 768px) {
+    .edu-item {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .edu-content-left,
+    .edu-content-right {
+      align-items: center;
+      text-align: center;
+    }
+
+    .degree-title {
+      font-size: 1.3rem; /* Adjusted font size for mobile */
+    }
+
+    .edu-details {
+      font-size: 1rem;
+    }
+  }
+
+  /* Disable animation for reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    .edu-item {
+      transition: none;
+    }
+  }
+
+
+
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Chandra's Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#training">Training & Workshops</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    function activateNavLink() {
+      let scrollPos = window.scrollY + 100;
+      sections.forEach(section => {
+        const top = section.offsetTop;
+        const bottom = top + section.offsetHeight;
+        if (scrollPos >= top && scrollPos < bottom) {
+          const id = section.getAttribute("id");
+          navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${id}`) {
+              link.classList.add("active");
+            }
+          });
+        }
+      });
+    }
+
+    window.addEventListener("scroll", activateNavLink);
+    activateNavLink();
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", function () {
+        navLinks.forEach(l => l.classList.remove("active"));
+        this.classList.add("active");
+      });
+    });
+  });
+</script>
+
+<!-- Hero Section with Typing Effect -->
+<section id="Home" class="hero d-flex align-items-center text-white" style="min-height: 60vh; background: linear-gradient(to right, #0f2027, #203a43, #2c5364);">
+  <div class="container">
+    <div class="row align-items-center text-center text-md-start">
+      <div class="col-md-7">
+        <h1 class="display-4 fw-bold mb-3">Hello, I'm Chandra Shekar</h1>
+        <h4><span id="typed-text"></span></h4>
+        <a href="https://drive.google.com/file/d/1s7SQNR7vEHPc7CeaOWOPhQvsmBg41-DI/view?usp=sharing" class="btn btn-outline-light btn-lg mt-4 px-4" target="_blank">Download Resume</a>
+      </div>
+      <div class="col-md-5 text-center mt-4 mt-md-0">
+        <img src="https://raw.githubusercontent.com/ChandrashekarDevarasetti/Chandra_Portfolio/refs/heads/main/Chandra.jpg" class="img-fluid rounded-circle shadow" width="220" alt="Chandra Shekar" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const texts = ["Data Analyst", "Data Scientist"];
+  let i = 0, j = 0, current = "", isDeleting = false;
+  const typedText = document.getElementById("typed-text");
+
+  function type() {
+    current = texts[i];
+    let displayText = isDeleting ? current.substring(0, j--) : current.substring(0, j++);
+    typedText.textContent = displayText;
+
+    if (!isDeleting && j === current.length + 1) {
+      isDeleting = true;
+      setTimeout(type, 1000);
+    } else if (isDeleting && j === 0) {
+      isDeleting = false;
+      i = (i + 1) % texts.length;
+      setTimeout(type, 500);
+    } else {
+      setTimeout(type, isDeleting ? 50 : 100);
+    }
+  }
+  type();
+</script>
+
+<style>
+  #typed-text {
+    display: inline-block;
+    min-width: 150px;  /* Prevent layout shifting */
+    white-space: nowrap;
+    overflow: hidden;
+  }
+</style>
+
+
+<!-- About Section -->
+<section id="about" class="py-5 about" data-aos="fade-up" style="background-color: #f8f9fa;">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">
+      <i class="fas fa-user me-2 text-primary"></i> About Me
+    </h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <p class="fs-5 about-text" data-aos="fade-up" data-aos-delay="200">
+          I'm <strong>Chandra Shekar</strong>, a passionate <strong>Data Analyst and Data Scientist</strong> with over <strong>3.5+ years of experience</strong> in transforming complex data into meaningful and <strong>actionable insights</strong>. I specialize in using <strong>Power BI</strong>, <strong>Grafana</strong>, <strong>SQL</strong>, and <strong>Python</strong> to build dynamic dashboards and conduct in-depth data analysis. My expertise includes <strong>data preprocessing</strong>, <strong>statistical modeling</strong>, and handling large-scale <strong>relational databases</strong> such as <strong>PostgreSQL</strong>, <strong>MSSQL</strong>, and <strong>Oracle</strong>. I'm also familiar with applying both <strong>supervised</strong> and <strong>unsupervised machine learning</strong> techniques to solve real-world business challenges. I’m driven by a commitment to deliver <strong>data-driven solutions</strong> that enhance <strong>operational efficiency</strong> and empower <strong>strategic decision-making</strong> across organizations.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+<!-- Skills Section -->
+<section id="skills"  data-aos="fade-up" class="py-5 section-bg">
+  <div class="container-fluid px-5">
+    <div class="mx-auto" style="max-width: 1300px;">
+      <h2 class="text-center mb-5 section-title">
+        <i class="fas fa-tools me-2 text-primary"></i> Skills
+      </h2>
+      <div class="row gy-4">
+
+        <!-- Skill Card -->
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card" data-aos="fade-up">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-database fa-2x text-primary me-3"></i>
+              <div>
+                <h5>Database Management</h5>
+                <p>Microsoft SQL Server, Oracle, PostgreSQL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-code fa-2x text-success me-3"></i>
+              <div>
+                <h5>Programming Languages</h5>
+                <p>Python, SQL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-table fa-2x text-warning me-3"></i>
+              <div>
+                <h5>Data Manipulation & Analysis</h5>
+                <p>Pandas, NumPy, Microsoft Excel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-chart-line fa-2x text-danger me-3"></i>
+              <div>
+                <h5>Data Visualization</h5>
+                <p>Power BI, Grafana, Matplotlib, Seaborn</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-percent fa-2x text-info me-3"></i>
+              <div>
+                <h5>Statistics</h5>
+                <p>Descriptive Statistics, Hypothesis Testing, Probability, Regression Analysis, Time Series Analysis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-robot fa-2x text-secondary me-3"></i>
+              <div>
+                <h5>Machine Learning</h5>
+                <p>Scikit-learn, EDA (Exploratory Data Analysis), Regression, Classification, Clustering, Anomaly Detection</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-laptop-code fa-2x text-dark me-3"></i>
+              <div>
+                <h5>Tools & Platforms</h5>
+                <p>Jupyter Notebook, Google Colab, GitHub, Microsoft Power BI Service</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+            <div class="d-flex align-items-start">
+              <i class="fas fa-user-friends fa-2x text-muted me-3"></i>
+              <div>
+                <h5>Soft Skills</h5>
+                <p>Problem Solving, Critical Thinking, Team Collaboration, Data Storytelling, Time Management, Team Management</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
+
+
+
+ <!--
+  Skills 
+ <section id="skills" class="py-5 skills" style="background-color: #fff3cd;">
+  <div class="container text-center">
+    <h2 class="section-title mb-4">Skills</h2>
+    <div class="honeycomb-wrapper">
+
+      <div class="hex-group">
+        <div class="hex">
+          <img src="images/skills/Power BI.png" alt="Power BI">
+        </div>
+        <p class="skill-name">Power BI</p>
+      </div>
+
+      <div class="hex-group">
+        <div class="hex">
+          <img src="https://cdn-icons-png.flaticon.com/512/2772/2772128.png" alt="SQL">
+        </div>
+        <p class="skill-name">SQL<br><small>(MSSQL, PostgreSQL, Oracle)</small></p>
+      </div>
+
+      <div class="hex-group">
+        <div class="hex">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python">
+        </div>
+        <p class="skill-name">Python</p>
+      </div>
+
+      <div class="hex-group">
+        <div class="hex">
+          <img src="images/skills/excel.png" alt="Excel">
+        </div>
+        <p class="skill-name">Advanced Excel</p>
+      </div>
+
+      <div class="hex-group">
+        <div class="hex">
+          <img src="images/skills/Statistics.png" alt="Statistics">
+        </div>
+        <p class="skill-name">Statistics</p>
+      </div>
+
+      <div class="hex-group">
+        <div class="hex">
+          <img src="https://cdn-icons-png.flaticon.com/512/3523/3523063.png" alt="Libraries">
+        </div>
+        <p class="skill-name">Numpy, Pandas<br>Seaborn, Matplotlib</p>
+      </div>
+
+    
+      <div class="hex-group">
+        <div class="hex">
+        
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png" class="skill-img" alt="SPSS">
+          </div>
+          <p class="skill-name">SPSS (Basics)</p>
+        </div>
+
+
+    </div>
+  </div>
+</section>
+
+CSS
+<style>
+  .honeycomb-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    gap: 16px;
+  }
+
+  .hex-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+  }
+
+  .hex {
+    width: 120px;
+    height: 104px;
+    background-color: rgba(255, 255, 255, 0.95);
+    clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+  }
+
+  .hex-group:nth-child(odd) {
+    margin-top: 30px;
+  }
+
+  .hex:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .hex img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .skill-name {
+    margin-top: 8px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    line-height: 1rem;
+  }
+
+  .skill-name small {
+    font-size: 0.6rem;
+  }
+
+  .skill-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.skill-img:hover {
+  transform: scale(1.1);
+}
+
+.skills p {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333;
+}
+ 
+  @media (max-width: 600px) {
+    .hex-group {
+      width: 100px;
+    }
+
+    .hex {
+      width: 100px;
+      height: 86px;
+    }
+
+    .hex img {
+      width: 36px;
+      height: 36px;
+    }
+
+    .skill-name {
+      font-size: 0.65rem;
+    }
+
+    .hex-group:nth-child(odd) {
+      margin-top: 20px;
+    }
+  }
+</style>
+--->
+  
+<!-- Experience -->
+<section id="experience" data-aos="fade-up" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">
+      <i class="fas fa-briefcase me-2 text-primary"></i> Professional Experience
+    </h2>
+
+    <div class="experience-grid">
+
+      <!-- Data Scientist -->
+      <div class="experience-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-header d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="mb-1">Data Scientist</h5>
+            <p class="mb-1 text-muted">Efftronics Systems Pvt. Ltd.</p>
+            <small class="text-muted"><strong>Oct 2023 – Present</strong></small>
+          </div>
+        </div>
+        <div class="card-body">
+          <ul class="experience-list">
+            <li>Developed Power BI dashboards for Railway Point Health Monitoring, enabling predictive maintenance and improving system reliability.</li>
+            <li>Designed live dashboards for Water Distribution and Smart Aquaculture, optimizing resource usage and enhancing sustainability.</li>
+            <li>Built real-time Air Quality Monitoring systems with visual alerts, allowing faster pollution spike detection.</li>
+            <li>Created energy-efficient monitoring dashboards for Railway Platforms, improving asset availability and reducing consumption.</li>
+            <li>Delivered proactive, IoT-driven insights across projects, significantly boosting operational efficiency and safety.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Data Analyst -->
+      <div class="experience-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-header d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="mb-1">Data Analyst</h5>
+            <p class="mb-1 text-muted">Efftronics Systems Pvt. Ltd.</p>
+            <small class="text-muted"><strong>Nov 2021 – Sep 2023</strong></small>
+          </div>
+        </div>
+        <div class="card-body">
+          <ul class="experience-list">
+            <li>Built energy consumption dashboards to detect anomalies, improving efficiency and reducing waste.</li>
+            <li>Designed a Battery Health Monitoring System with real-time alerts and predictive analytics to extend battery life and ensure safety.</li>
+            <li>Implemented Indoor Air Quality dashboards, helping reduce exposure to harmful pollutants with real-time monitoring.</li>
+            <li>Led Power BI workshops for professionals and students, equipping them with practical skills in data analysis and visualization.</li>
+            <li>Collaborated with engineers and stakeholders to design, deploy, and improve data-driven solutions across various domains.</li>
+          </ul>
+        
+        </div>
+      </div>
+
+      <!-- Power BI Trainer -->
+      <div class="experience-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-header d-flex justify-content-between align-items-start">
+          <div>
+            <h5 class="mb-1">Power BI Trainer</h5>
+            <p class="mb-1 text-muted">Efftronics Systems Pvt. Ltd.</p>
+            <small class="text-muted"><strong>Trainer</strong></small>
+          </div>
+          <span class="badge bg-info text-dark">Training | Power BI</span>
+        </div>
+        <div class="card-body">
+          <ul class="experience-list">
+            <li>Conducted 3-day workshops for educators and professionals, focusing on Power BI data visualization techniques.</li>
+            <li>Trained college students at Vignan College, equipping them with skills in data visualization and Power BI reporting.</li>
+            <li>Empowered internal teams by teaching Power BI Service for live project analysis and reporting.</li>
+          </ul>
+          <p class="mb-0"><strong>Focus Areas:</strong> Power BI Desktop & Service, DAX, Data Storytelling, Dashboard Design</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Font Awesome & AOS (Place these in <head> if not already included) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+<!-- AOS JS (Place this before </body>) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!-- AOS & Font Awesome CDN (add in your <head>) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- Projects Section -->
+  <section id="projects" class="py-5 projects" style="background-color: #e9f7ef;">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">
+        <i class="fas fa-laptop-code text-primary" style="font-size: 1.5rem;"></i>
+        <span>Projects</span>
+      </h2>
+      <div class="grid-container">
+        
+      <!-- Project 1: Railway Point Health Monitoring -->
+      <div class="card" data-aos="fade-up">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h5 class="card-title mb-0">
+              <i class="fas fa-train me-2 text-primary"></i>Railway Point Health Monitoring
+            </h5>
+            <span class="badge bg-teal text-white">Professional</span>
+          </div>
+          <p>Implemented a real-time analytics solution to monitor the health of railway point motors using sensor data and Power BI.</p>
+          <ul>
+            <li><span class="highlight">Improved data reliability from 60% to 100%</span> using live data validation logic.</li>
+            <li><span class="highlight">Reduced failure risks</span> by identifying point motor anomalies early.</li>
+            <li><span class="highlight">Enhanced asset lifecycle</span> with time-based signal deviation analysis.</li>
+            <li>Enabled <span class="highlight">predictive maintenance</span> with fault alerting dashboards.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+        <div class="card" data-aos="fade-up">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title mb-0">
+                <i class="fas fa-traffic-light me-2 text-warning"></i>Signal Health Monitoring
+              </h5>
+              <span class="badge bg-teal text-white">Professional</span>
+            </div>
+            <p>Developed a real-time monitoring solution for railway signaling systems to ensure operational safety and efficiency. By leveraging IoT technology and predictive analytics, we significantly improved system reliability, uptime, and fault detection.</p>
+            <ul>
+              <li><span class="highlight">20% increase in signal reliability</span> by implementing real-time monitoring and fault detection.</li>
+              <li><span class="highlight">Reduced signal failures by 30%</span> through early identification and timely corrective actions.</li>
+              <li><span class="highlight">40% improvement in system uptime</span> with predictive maintenance and IoT-enabled monitoring.</li>
+            </ul>
+          </div>
+        </div>
+
+
+  
+        <!-- Project 3 -->
+        <div class="card" data-aos="fade-up">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title mb-0">
+                <i class="fas fa-water me-2 text-primary"></i>Smart Water Management
+              </h5>
+              <span class="badge bg-teal text-white">Professional</span>
+            </div>
+            <p>Designed a real-time IoT-based framework for municipal water supply management and leak detection.</p>
+            <ul>
+              <li><span class="highlight">Reduced water loss by 40%</span> through intelligent flow and pressure monitoring.</li>
+              <li><span class="highlight">Enhanced operational response</span> using dynamic Power BI dashboards and alerting mechanisms.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Project 4 -->
+        <div class="card" data-aos="fade-up">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title mb-0">
+                <i class="fas fa-fish me-2 text-primary"></i>Smart Aquaculture Monitoring
+              </h5>
+              <span class="badge bg-teal text-white">Professional</span>
+            </div>
+            <p>Implemented IoT-enabled monitoring of environmental conditions in aquaculture ponds to improve fish health and yield.</p>
+            <ul>
+              <li><span class="highlight">Improved aquatic sustainability by 25%</span> by optimizing temperature and DO levels.</li>
+              <li>Enabled proactive decision-making through real-time insights.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Project 5 -->
+        <div class="card" data-aos="fade-up">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title mb-0">
+                <i class="fas fa-wind me-2 text-primary"></i>Air Quality Intelligence System
+              </h5>
+              <span class="badge bg-teal text-white">Professional</span>
+            </div>
+            <p>Deployed IoT sensors for real-time tracking of key pollutants and visualized trends using Power BI and ECharts.</p>
+            <ul>
+              <li><span class="highlight">Accelerated pollution alerting by 20%</span> using dynamic AQI-based dashboards.</li>
+              <li>Provided actionable insights to support environmental policy and planning.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Project 6 -->
+        <div class="card" data-aos="fade-up">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title mb-0">
+                <i class="fas fa-lightbulb me-2 text-primary"></i>Railway Platform Asset Intelligence
+              </h5>
+              <span class="badge bg-teal text-white">Professional</span>
+            </div>
+            <p>Built dashboards for monitoring platform lighting, lifts, and escalators to ensure availability and energy efficiency.</p>
+            <ul>
+              <li><span class="highlight">Improved energy efficiency by 40%</span> and minimized equipment downtime.</li>
+              <li>Strengthened passenger safety and service quality through asset health tracking.</li>
+            </ul>
+          </div>
+        </div>
+        
+       <!-- Project 7 -->
+          <div class="card" data-aos="fade-up">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title mb-0">
+                  <i class="fas fa-bolt text-warning me-2"></i>Energy Monitoring
+                </h5>
+                <span class="badge bg-teal text-white">Professional</span>
+              </div>
+              <p>Developed intelligent analytics for IoT-based <span class="highlight">energy consumption data</span>, identifying inefficiencies and anomalies.</p>
+              <ul class="mt-2">
+                <li><span class="highlight">30% reduction</span> in energy usage anomalies through smart detection</li>
+                <li><span class="highlight">20% increase</span> in efficiency via real-time pattern optimization</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Project 8 -->
+          <div class="card" data-aos="fade-up">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title mb-0">
+                  <i class="fas fa-battery-three-quarters text-success me-2"></i>Battery Health Monitoring
+                </h5>
+                <span class="badge bg-teal text-white">Professional</span>
+              </div>
+              <p>Designed a real-time IoT-based BHMS to monitor <span class="highlight">battery health, charge cycles, and performance metrics</span>.</p>
+              <ul class="mt-2">
+                <li><span class="highlight">25% increase</span> in battery lifespan through optimized monitoring</li>
+                <li><span class="highlight">100% safety compliance</span> via predictive alerts and maintenance</li>
+                <li>Real-time integration with <span class="highlight">Power BI</span> for actionable insights</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Project 9 -->
+          <div class="card" data-aos="fade-up">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="card-title mb-0">
+                  <i class="fas fa-wind text-primary me-2"></i>Indoor Air Quality Monitoring
+                </h5>
+                <span class="badge bg-teal text-white">Professional</span>
+              </div>
+              <p>Engineered a smart monitoring system for <span class="highlight">real-time indoor air quality analytics</span> using IoT sensor data.</p>
+              <ul class="mt-2">
+                <li>Tracked key metrics: <span class="highlight">CO₂, PM2.5, humidity, temperature</span></li>
+                <li>Integrated with <span class="highlight">Power BI</span> for instant air health dashboards</li>
+                <li>Enabled <span class="highlight">automated alerts</span> for unsafe levels, improving response efficiency by 40%</li>
+              </ul>
+            </div>
+          </div>
+
+            
+
+        <!-- Project 10 -->
+        <div class="card" data-aos="fade-up">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title mb-0">
+                <i class="fas fa-wallet me-2 text-primary"></i>Cashless Transactions in Vijayawada
+              </h5>
+              <span class="badge bg-orange text-white">Personal</span>
+            </div>
+            <p><strong>Duration:</strong> Jan 2019 – Apr 2019<br>
+               <strong>Tools:</strong> SPSS, Microsoft Excel</p>
+            <p>Executed a statistical study to explore factors influencing digital payment adoption in urban settings.</p>
+            <ul>
+              <li>Analyzed user behavior and awareness using descriptive and inferential statistics.</li>
+              <li><span class="highlight">Identified key motivators</span> such as convenience and security shaping adoption trends.</li>
+            </ul>
+            <a href="#" class="btn btn-outline-primary btn-sm me-2 mt-2"><i class="fas fa-play"></i> Demo</a>
+                <a href="#" class="btn btn-outline-dark btn-sm mt-2"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <!-- AOS Initialization -->
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+  
+  
+<!-- Educations -->
+<section class="education-section" data-aos="fade-up" id="education">
+  <h2 class="section-title">
+    <i class="fas fa-graduation-cap"></i> <!-- Main Education Icon -->
+    Education
+  </h2>
+
+  <!-- Master's Degree -->
+  <div class="edu-item">
+    <div class="edu-content-left">
+      <h3 class="degree-title">
+        <i class="fas fa-graduation-cap"></i> Master's in Statistics
+      </h3>
+      <p class="institution-name">Krishna University, Nuzvid</p>
+    </div>
+    <div class="edu-content-right">
+      <div class="date">2019 – 2021</div>
+      <div class="cgpa">CGPA: 9.5</div>
+    </div>
+  </div>
+
+  <!-- Bachelor's Degree -->
+  <div class="edu-item">
+    <div class="edu-content-left">
+      <h3 class="degree-title">
+        <i class="fas fa-user-graduate"></i> Bachelor's in Mathematics, Statistics & Computer Science
+      </h3>
+      <p class="institution-name">K.B.N. College, Krishna University, Vijayawada</p>
+    </div>
+    <div class="edu-content-right">
+      <div class="date">2016 – 2019</div>
+      <div class="cgpa">CGPA: 9.4</div>
+    </div>
+  </div>
+
+  <!-- Intermediate -->
+  <div class="edu-item">
+    <div class="edu-content-left">
+      <h3 class="degree-title">
+        <i class="fas fa-school"></i> Intermediate in Science
+      </h3>
+      <p class="institution-name">Board of Intermediate Education, Andhra Pradesh</p>
+    </div>
+    <div class="edu-content-right">
+      <div class="date">2014 – 2016</div>
+      <div class="cgpa">CGPA: 9.2</div>
+    </div>
+  </div>
+
+  <!-- SSC (Secondary School Certificate) -->
+  <div class="edu-item">
+    <div class="edu-content-left">
+      <h3 class="degree-title">
+        <i class="fas fa-pencil-alt"></i> SSC (10th Grade)
+      </h3>
+      <p class="institution-name">Board of Secondary Education, Andhra Pradesh</p>
+    </div>
+    <div class="edu-content-right">
+      <div class="date">2013 – 2014</div>
+      <div class="cgpa">CGPA: 8.2</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- JavaScript for Scroll Animation -->
+<script>
+  // Function to check if element is in viewport
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth));
+  }
+
+  // Scroll Event Listener
+  window.addEventListener('scroll', function () {
+    const eduItems = document.querySelectorAll('.edu-item');
+    eduItems.forEach(function (item) {
+      if (isElementInViewport(item)) {
+        item.classList.add('fade-in');
+      } else {
+        item.classList.remove('fade-in'); // Optional: remove the animation when it's out of view
+      }
+    });
+  });
+
+  // Trigger scroll to activate animation on page load
+  window.addEventListener('load', function() {
+    const eduItems = document.querySelectorAll('.edu-item');
+    eduItems.forEach(function (item) {
+      if (isElementInViewport(item)) {
+        item.classList.add('fade-in');  // Activate animation if visible initially
+      }
+    });
+  });
+</script>
+
+
+
+<!-- Certifications -->
+<section id="certifications" class="py-5" data-aos="fade-up" style="background-color: #e2f0d9;">
+  <div class="container">
+    <h2 class="section-title text-center mb-5 fw-bold text-success">
+      <i class="bi bi-award-fill me-2"></i>Certifications
+    </h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Certificate Card Template -->
+      <div class="col-md-5 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100 shadow-sm border-0 certification-card">
+          <div class="card-body">
+            <h5 class="card-title mb-1 text-primary">
+              <i class="bi bi-database-check text-success me-2"></i>SQL for Data Science
+            </h5>
+            <p class="card-text mb-3">Great Learning Academy</p>
+            <a href="https://drive.google.com/file/d/1uU4auC94irWq9cUcipE3k9ruRF2yu0od/view?usp=sharing" target="_blank" class="btn btn-success btn-sm">View Certificate</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add the remaining cards below, all with 'data-aos' attributes -->
+      <div class="col-md-5 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 shadow-sm border-0 certification-card">
+          <div class="card-body">
+            <h5 class="card-title mb-1 text-primary">
+              <i class="bi bi-cpu-fill text-success me-2"></i>Data Science with Python
+            </h5>
+            <p class="card-text mb-3">Great Learning Academy</p>
+            <a href="https://drive.google.com/file/d/1vwMHQj3WCzy0cjldlQXSrqwT4bIkrwpM/view?usp=sharing" target="_blank" class="btn btn-success btn-sm">View Certificate</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card h-100 shadow-sm border-0 certification-card">
+          <div class="card-body">
+            <h5 class="card-title mb-1 text-primary">
+              <i class="bi bi-file-earmark-excel-fill text-success me-2"></i>Advanced Excel
+            </h5>
+            <p class="card-text mb-3">Udemy</p>
+            <a href="https://drive.google.com/file/d/1vTLlPsZiTlM5SkzRlv4SB_jiIrxBWTeu/view?usp=sharing" target="_blank" class="btn btn-success btn-sm">View Certificate</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="card h-100 shadow-sm border-0 certification-card">
+          <div class="card-body">
+            <h5 class="card-title mb-1 text-primary">
+              <i class="bi bi-bar-chart-line-fill text-success me-2"></i>Power BI Visualization
+            </h5>
+            <p class="card-text mb-3">Great Learning Academy</p>
+            <a href="https://drive.google.com/file/d/1uIT_SG59F4wAhmiabdwEIrtTClS89FkS/view?usp=sharing" target="_blank" class="btn btn-success btn-sm">View Certificate</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="card h-100 shadow-sm border-0 certification-card">
+          <div class="card-body">
+            <h5 class="card-title mb-1 text-primary">
+              <i class="bi bi-graph-up-arrow text-success me-2"></i>Excel Data Analysis
+            </h5>
+            <p class="card-text mb-3">Udemy</p>
+            <a href="https://drive.google.com/file/d/1vk1LK1CFCV1SVuBaf5hDmiFL4VNP93LK/view?usp=sharing" target="_blank" class="btn btn-success btn-sm">View Certificate</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+        <div class="card h-100 shadow-sm border-0 certification-card">
+          <div class="card-body">
+            <h5 class="card-title mb-1 text-primary">
+              <i class="bi bi-terminal-fill text-success me-2"></i>HackerRank SQL (All Levels)
+            </h5>
+            <p class="card-text mb-3">HackerRank</p>
+            <a href="https://drive.google.com/file/d/1VcJowP2vwj3qWFWT7r2p13toEU55BqgY/view?usp=sharing" target="_blank" class="btn btn-success btn-sm">View Certificate</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 col-lg-4" data-aos="fade-up" data-aos-delay="700">
+        <div class="card h-100 shadow-sm border-0 certification-card">
+          <div class="card-body">
+            <h5 class="card-title mb-1 text-primary">
+              <i class="bi bi-code text-success me-2"></i>NumPy with Python
+            </h5>
+            <p class="card-text mb-3">Simplilearn</p>
+            <a href="https://drive.google.com/file/d/1vJe04vMruYpvFoEQT-2nTjKvDNin_Mc0/view?usp=sharing" target="_blank" class="btn btn-success btn-sm">View Certificate</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 col-lg-4" data-aos="fade-up" data-aos-delay="800">
+        <div class="card h-100 shadow-sm border-0 certification-card">
+          <div class="card-body">
+            <h5 class="card-title mb-1 text-primary">
+              <i class="bi bi-table text-success me-2"></i>Python Pandas Basics
+            </h5>
+            <p class="card-text mb-3">Simplilearn</p>
+            <a href="https://drive.google.com/file/d/1vOPxLctZTNu3rp4gvb3aewUZF4U0sJS-/view?usp=sharing" target="_blank" class="btn btn-success btn-sm">View Certificate</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+<!-- Styles -->
+<style>
+  .certification-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #28a745;
+  }
+
+  .certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.3);
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+    color: #6c757d;
+  }
+
+  .btn-success {
+    font-size: 0.85rem;
+    padding: 5px 12px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-success:hover {
+    background-color: #218838;
+    color: #fff;
+    box-shadow: 0 0 8px rgba(33, 136, 56, 0.5);
+    transform: scale(1.05);
+  }
+</style>
+
+
+
+
+
+
+
+ <!--
+  Testimonials
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Testimonials</h2>
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 p-4">
+            <p class="fst-italic">“Chandra Shekar's dashboards provided exceptional clarity to our water distribution issues. His insights helped reduce inefficiencies significantly.”</p>
+            <p class="text-end fw-semibold mb-0 mt-3">— Client, Water Resource Department</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 p-4">
+            <p class="fst-italic">“His Power BI workshop was insightful and engaging. Our faculty learned practical skills we immediately applied to academic projects.”</p>
+            <p class="text-end fw-semibold mb-0 mt-3">— Client, Vignan College</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 p-4">
+            <p class="fst-italic">“Working with Chandra on Indian Railways data systems improved safety outcomes. His attention to detail was unmatched.”</p>
+            <p class="text-end fw-semibold mb-0 mt-3">— Client, Indian Railways</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <style>
+    #testimonials .card {
+      background-color: #fff;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    #testimonials .card:hover {
+      transform: translateY(-4px);
+    }
+
+    #testimonials p {
+      font-size: 0.95rem;
+      color: #333;
+    }
+  </style>
+-->
+      
+ <!-- Training & Workshops -->
+<section id="training" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5" data-aos="fade-up">
+      <i class="bi bi-easel2-fill me-2 text-primary"></i> Training & Workshops
+    </h2>
+
+    <div class="row g-4">
+      <!-- Workshop for Educators -->
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card h-100 border-0 shadow-lg p-4 rounded-4 hover-shadow transition">
+          <div class="d-flex align-items-start">
+            <i class="bi bi-person-video3 display-5 text-primary me-3"></i>
+            <div>
+              <h5 class="fw-semibold text-dark mb-2">
+                Power BI Workshop for Educators & Professionals
+              </h5>
+              <p class="text-muted mb-0">
+                Successfully conducted an intensive <span class="highlight">3-day workshop</span> at Efftronics Systems Pvt. Ltd.,
+                guiding participants through advanced <span class="highlight">data visualization</span> and <span class="highlight">reporting</span> using Power BI.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Training for Students -->
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card h-100 border-0 shadow-lg p-4 rounded-4 hover-shadow transition">
+          <div class="d-flex align-items-start">
+            <i class="bi bi-mortarboard-fill display-5 text-success me-3"></i>
+            <div>
+              <h5 class="fw-semibold text-dark mb-2">Power BI Training for College Students</h5>
+              <p class="text-muted mb-0">
+                Delivered hands-on training sessions at <span class="highlight">Vignan College</span>,
+                equipping students with <span class="highlight">practical knowledge</span> in <span class="highlight">data analytics</span> and
+                <span class="highlight">dashboard creation</span> using Power BI.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Styles -->
+<style>
+  .highlight {
+    font-weight: 600;
+    color: #0d6efd;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #333;
+  }
+
+  .section-title i {
+    font-size: 1.8rem;
+    vertical-align: middle;
+  }
+
+  .card h5 {
+    font-size: 1.15rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .hover-shadow:hover {
+    box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
+
+  .transition {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .bi {
+    flex-shrink: 0;
+  }
+</style>
+ 
+  <!-- Bootstrap Icons CDN (make sure this is added in your <head> or before this section) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   
+ 
+<!-- Contact -->
+<section id="contact" data-aos="fade-up" class="py-5 contact">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Contact</h2>
+
+    <!-- Contact Items -->
+    <div class="row justify-content-center text-center contact-items d-flex flex-md-row flex-column">
+      
+     <!-- Email -->
+<div class="col-md-3 contact-block mb-4 mb-md-0">
+  <a href="mailto:devarasettychandrashekar@gmail.com" class="text-decoration-none text-dark">
+    <div class="icon mb-2 text-primary">
+      <i class="fas fa-envelope fa-2x"></i>
+    </div>
+    <p class="fw-semibold mb-1">Email</p>
+    <p class="small">devarasettychandrashekar@gmail.com</p>
+  </a>
+</div>
+
+
+      <!-- Phone -->
+      <div class="col-md-3 contact-block mb-4 mb-md-0 border-md-start border-md-end">
+        <div class="icon mb-2 text-primary">
+          <i class="fas fa-phone fa-2x"></i>
+        </div>
+        <p class="fw-semibold mb-1">Phone</p>
+        <p class="mb-0 small">+91 90309 23488</p>
+      </div>
+
+      <!-- Location -->
+      <div class="col-md-3 contact-block mb-4 mb-md-0">
+        <div class="icon mb-2 text-primary">
+          <i class="fas fa-map-marker-alt fa-2x"></i>
+        </div>
+        <p class="fw-semibold mb-1">Location</p>
+        <p class="mb-0 small">Vijayawada, India</p>
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="text-center mt-4">
+      <a href="https://www.linkedin.com/in/chandra-shekar-devarasetti-8799b2222/" target="_blank" class="icon-btn me-3" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/chandrashekar" target="_blank" class="icon-btn" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</section>
+<style>
+/* Email icon - red */
+.contact-block .icon .fa-envelope {
+  color: #e63946 !important;
+}
+
+/* Phone icon - green */
+.contact-block .icon .fa-phone {
+  color: #2a9d8f !important;
+}
+
+/* Location icon - orange */
+.contact-block .icon .fa-map-marker-alt {
+  color: #f4a261 !important;
+}
+</style>
+
+      
+    
+    
+  
+  <!-- Footer -->
+  <footer class="text-center" >
+    &copy; Chandra Shekar Devarasetti
+  </footer>
+  
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function () {
+        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+  
+  </body>
+  </html>
+  
