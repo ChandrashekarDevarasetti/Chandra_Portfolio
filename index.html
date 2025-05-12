@@ -422,50 +422,56 @@
 
 <!-- Navbar -->
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const navLinks = document.querySelectorAll(".nav-link");
-  const navbarCollapse = document.querySelector(".navbar-collapse");
+  document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".nav-link");
+    const navbarCollapse = document.querySelector(".navbar-collapse");
 
-  navLinks.forEach(link => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute("href").substring(1);
-      const targetSection = document.getElementById(targetId);
-
-      if (targetSection) {
-        targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-
-      // Collapse the navbar on mobile after clicking
-      const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-      if (bsCollapse) {
-        bsCollapse.hide();
-      }
-
-      // Update active class
-      navLinks.forEach(l => l.classList.remove("active"));
-      this.classList.add("active");
-    });
-  });
-
-  // Optional: Update active class on scroll
-  window.addEventListener("scroll", () => {
-    let fromTop = window.scrollY + 100;
-
+    // Smooth scroll and close navbar on click
     navLinks.forEach(link => {
-      const section = document.querySelector(link.getAttribute("href"));
-      if (
-        section.offsetTop <= fromTop &&
-        section.offsetTop + section.offsetHeight > fromTop
-      ) {
-        navLinks.forEach(l => l.classList.remove("active"));
-        link.classList.add("active");
-      }
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href").substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+
+        // Collapse navbar on mobile
+        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+        if (bsCollapse) {
+          bsCollapse.hide();
+        }
+      });
+    });
+
+    // Highlight active nav link on scroll
+    window.addEventListener("scroll", () => {
+      let fromTop = window.scrollY + 120; // adjust for navbar height
+
+      navLinks.forEach(link => {
+        const section = document.querySelector(link.getAttribute("href"));
+        if (section) {
+          if (
+            section.offsetTop <= fromTop &&
+            section.offsetTop + section.offsetHeight > fromTop
+          ) {
+            navLinks.forEach(l => l.classList.remove("active"));
+            link.classList.add("active");
+          }
+        }
+      });
     });
   });
-});
 </script>
-  
+
+  <style>
+  .nav-link.active {
+  font-weight: bold;
+  color: #007bff !important;
+  border-bottom: 2px solid #007bff;
+}
+</style>
 
 
   <!-- Hero Section with Typing Effect -->
